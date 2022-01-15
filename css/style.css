@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@600;700&family=Roboto:wght@700&display=swap');
 
-/* font-family: 'Inter', sans-serif;
-font-family: 'Manrope', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
 * {
     padding: 0;
     margin: 0;
@@ -42,11 +37,18 @@ body {
     margin-top: 80px;
 }
 
+/* navbar */
+
 nav {
     height: 52px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.ani {
+    color: royalblue;
+    animation: ani 1.5s ease-in-out infinite;
 }
 
 .navbar-menu {
@@ -108,6 +110,12 @@ nav {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    transition: all 1s;
+}
+
+.header-btn:hover {
+    transform: scale(1.3);
+    background: royalblue;
 }
 
 /*=================================
@@ -277,4 +285,105 @@ footer p {
 
 .footer-icon {
     margin: 0 13px;
+}
+
+/*=================================
+============= animation ===========
+===================================*/
+
+@keyframes ani {
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*=================================
+============= media queries ===========
+===================================*/
+
+@media only screen and (max-width: 688px) {
+    .container {
+        width: 100vw;
+    }
+    .header-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .brand {
+        width: 75%;
+        margin-left: 20px;
+    }
+
+    .right-side {
+        order: 1;
+    }
+
+    .left-side {
+        order: 2;
+    }
+
+    .logos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        width: 330px;
+        justify-self: center;
+    }
+    .fuji-camera {
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+        justify-content: center;
+    }
+    .camera-pic {
+        text-align: center;
+    }
+    .navbar-item, .sm-none {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container {
+        width: 90vw;
+    }
+    .header-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .brand {
+        width: 75%;
+        margin-left: 20px;
+    }
+
+    .right-side {
+        order: 1;
+    }
+
+    .left-side {
+        order: 2;
+    }
+    .logos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product {
+        width: 330px;
+    }
+    .navbar-item, .sm-none {
+        display: none;
+    }
 }
