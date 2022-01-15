@@ -348,6 +348,7 @@ footer p {
     }
     .camera-info {
         padding: 20px 10px;
+        width: 100%;
     }
     .camera-pic {
         text-align: center;
