@@ -343,6 +343,7 @@ footer p {
         grid-template-columns: 1fr;
         padding: 20px 10px;
         justify-content: center;
+        height: auto;
     }
     .camera-info {
         padding: 20px 10px;
