@@ -342,6 +342,7 @@ footer p {
     .fuji-camera {
         grid-template-columns: 1fr;
         padding: 20px 10px;
+        margin-left: 5px;
         justify-content: center;
     }
     .camera-pic {
