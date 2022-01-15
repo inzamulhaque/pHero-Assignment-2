@@ -11,6 +11,10 @@ font-family: 'Roboto', sans-serif; */
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     color: #3A3A3A;
@@ -188,4 +192,89 @@ nav {
     font-weight: 700;
     line-height: 22px;
     color: #787885;
+}
+
+.products-link {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.products-link a {
+    text-decoration: none;
+    color: var(--main-btn-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*=================================
+============= optional section style ===========
+===================================*/
+
+.fuji-camera {
+    display: grid;
+    grid-template-columns: 0.9fr 1.3fr;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.camera-pic img {
+    width: 400px;
+    height: 270px;
+}
+
+.fuji-camera h1 {
+    font-size: 38px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+.fuji-camera p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6C6C6C;
+    text-align: justify;
+}
+
+.buy {
+    background-color: var(--main-btn-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+/*=================================
+============= footer section style ===========
+===================================*/
+
+footer {
+    margin-top: 70px;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer p {
+    color: #D9DBE1;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Manrope', sans-serif;
+}
+
+.footer-icons {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.footer-icon {
+    margin: 0 13px;
 }
